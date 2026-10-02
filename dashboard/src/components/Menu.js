@@ -6,7 +6,7 @@ const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState (0);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState (false);
 
-  const handleMenuClick = index => {
+  const handleMenuClick = (index) => {
     setSelectedMenu (index);
   };
 
@@ -19,7 +19,7 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <img src="logo.png" style={{width: '50px'}} />
+      <img src="logo.png" alt="logo" style={{width: '50px'}} />
       <div className="menus">
         <ul>
           <li>
@@ -94,6 +94,7 @@ const Menu = () => {
           <div className="avatar">ZU</div>
           <p className="username">USERID</p>
         </div>
+        
       </div>
     </div>
   );
